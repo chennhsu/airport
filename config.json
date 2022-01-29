@@ -1,13 +1,21 @@
 {
+  "log": {
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log",
+    "loglevel": "debug"
+  },
   "inbounds": [
     {
       "port": 8888,
-      "listen":"127.0.0.1",
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
             "id": "a66bb667-265c-49de-9a5d-4a24f6bfd67b",
+            "alterId": 64
+          },
+          {
+            "id": "82c87635-828f-4ba5-a81f-f660621de6c3",
             "alterId": 64
           }
         ]

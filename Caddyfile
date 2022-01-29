@@ -13,5 +13,5 @@ us1.vpn.vc {
         header Connection *Upgrade*
         header Upgrade websocket
     }
-    reverse_proxy @v2ray_websocket v2ray://v2ray:8888
+    reverse_proxy @v2ray_websocket v2ray:8888
 }
